@@ -1,0 +1,176 @@
+#cargando {
+    display: none;
+}
+
+#header {
+    margin-bottom: 15%;
+}
+
+h3.tits-blog a {
+    color: #000!important;
+    margin-top: 10px;
+}
+
+h3.tits-blog {
+    margin-top: 15px;
+}
+
+.section-header {
+    margin-bottom: 2em;
+}
+
+.bg-dark {
+    background-color: #004c54!important;
+}
+
+a.butt-nav {
+    padding: 15px!important;
+    color: #ffffff!important;
+}
+
+img.cart-head {
+    width: 45px;
+    margin: auto 20px;
+}
+
+#footer {
+    margin-top: 10%;
+}
+
+.row-f {
+    color: #fff;
+}
+
+ul.menu-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+ul.menu-footer li{
+    padding: 5px 15px;
+}
+
+.cont-footer {
+    text-align: center;
+}
+
+.top-footer {
+    background: #004c54;
+    padding: 15px;
+}
+
+.bott-foot {
+    background: #151515;
+}
+
+section#section-contc {
+    margin-top: 5%;
+    background-color: #d8d8d8;
+    height: 100vh;
+}
+
+.box-w {
+    margin: 0px 10%;
+    background: #fff;
+    padding: 50px;
+}
+
+.image-about {
+    display: flex;
+    justify-content: center;
+}
+
+section#section-about {
+    margin-top: 10%;
+}
+
+.text-about {
+    padding: 25px;
+    text-align: center;
+}
+
+.btn-c {
+    background-color: #004c54;
+    color: #fff;
+    padding: 10px 45px;
+    border: none;
+    margin: 0px 15px;
+}
+
+.hidden-cat {
+    display: none!important;
+}
+
+
+#grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 2fr));
+}
+
+.card {
+    width: 300px;
+    margin: 25px;
+}
+
+
+
+/* ----- RESPONSIVE ----- */
+
+@media (max-width: 780px) and (min-width: 490px) {
+    section#section-contc {
+        margin-top: 10%;
+    }
+
+    #grid-cards {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 2fr));
+    }
+
+    .single-blog-img img {
+        width: 180px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    section#section-1 {
+        margin-top: 10%;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    section#section-contc {
+        margin-top: 17%;
+    }
+
+    section#section-blog {
+        margin-top: 25%;
+    }
+
+    section#section-1 {
+        margin-top: 16%;
+    }
+
+    #grid-cards {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 9fr));
+    }
+
+    div#categories {
+        display: grid;
+        grid-column-gap: 6px;
+        grid-row-gap:6px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+}
+

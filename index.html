@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo-eagles.png">
+    <title>Eagles Fans</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <img src="/img/logo-eagles.png" alt="logo-eagles" width="95px">
+                    <a class="navbar-brand" href="/index.html">Philadelphia Eagles</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown d-inline-flex">
+                                <a href="/about.html" class="butt-nav">About Us</a>
+                                <a href="/blog.html" class="butt-nav">News</a>
+                                <a href="/contact.html" class="butt-nav">Contact</a>
+                                <img src="img/shopping-cart.png" class="nav-link dropdown-toggle img-fluid cart-head"
+                                    href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- section 1------------------------------------------------------------------------------------------------------>
+
+    <section id="section-1">
+        <div>
+            <img src="https://static.clubs.nfl.com/image/private/f_auto/eagles/ixj8m7lshogl62dsopui" alt="banner-eagles"
+                width="100%">
+        </div>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+            <div id="categories">
+                <button id="all-cat-btn" class="btn-c">All</button>
+                <button id="women-cat-btn" class="btn-c">Women</button>
+                <button id="men-cat-btn" class="btn-c">Men</button>
+            </div>
+        </div>
+
+        <div class="container" id="lista-productos">
+
+            <div id="grid-cards" class="card-deck text-center">
+
+                <div id="div1" class="card shadow-sm women-cat">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Women's Nike Black</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="/img/cangu.webp" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">120</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Women's Nike Black Philadelphia Eagles Performance Pullover Hoodie</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div id="div2" class="card shadow-sm men-cat">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Nike A.J. Brown</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="/img/brown-ts.jfif" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">190</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Men's Nike A.J. Brown Midnight Green Philadelphia Eagles Player Game Jersey</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div id="div3" class="card shadow-sm women-cat">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Nike White Philadelphia</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="/img/any-name.jfif" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">205</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Women's Nike White Philadelphia Eagles Custom Game Jersey</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+                <div id="div4" class="card shadow-sm women-cat">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Cunningham Eagles 1990</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="/img/green-wo.jfif" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">190</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Women's Mitchell & Ness Randall Cunningham Kelly</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div id="div5" class="card shadow-sm men-cat">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Nike Jalen Hurts Black</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="/img/hurts-ts.jfif" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">190</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Men's Nike Jalen Hurts Black Philadelphia Eagles Alternate Game Jersey</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div id="div" class="card shadow-sm men-cat">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Black/White Eagles Jacket</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/jack-uni.jfif" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">220</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Men's Pro Standard Black/White Philadelphia Eagles Jacket</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- FOOTER ----------------------------------------------------------------------------->
+    <footer id="footer">
+        <div class="row-f">
+            <div class="top-footer">
+                <div class="col-sm-12 center-col">
+                    <div class="cont-footer">
+                        <img src="/img/logo-eagles.png" alt="logo-eagles" width="95px">
+                        <p>
+                            Copyright © 2022 Philadelphia Eagles. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 bott-foot">
+                <div class="terms">
+                    <ul class="menu-footer">
+                        <li><a href="#"></a>PRIVACY POLICY</li>
+                        <li><a href="#"></a>TERMS & CONDITIONS</li>
+                        <li><a href="#"></a>CONTACT US</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+    <script src="/js/filtro.js"></script>
+
+</body>
+
+</html>
